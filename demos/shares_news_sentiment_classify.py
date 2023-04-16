@@ -13,7 +13,7 @@ import openai
 
 def get_news_from_tushare(api_key: str, data_path: str = 'finance_news_from_tushare.csv') -> str:
     start_date = '2023-02-01'
-    end_date = '2023-02-02'
+    end_date = '2023-04-01'
     limit_line = 200
     if_news_or_reports = False
 
@@ -123,9 +123,9 @@ def get_result_from_openai_davinci(api_key: str, prompt_str: str):
     return response
 
 
-API_KEY_Tushare = ''  # https://www.tushare.pro/user/token
-API_KEY_MarketAUX = ''  # https://www.marketaux.com/account/dashboard
-API_KEY_OpenAI = ''  # https://platform.openai.com/account/api-keys
+API_KEY_Tushare = 'TUSHARE_API'  # https://www.tushare.pro/user/token
+API_KEY_MarketAUX = 'MARKETAUX_API'  # https://www.marketaux.com/account/dashboard
+API_KEY_OpenAI = 'OPENAI_API'  # https://platform.openai.com/account/api-keys
 
 
 def run_news_in_chinese():
